@@ -1,0 +1,34 @@
+{
+    "name": "rishats/linkedin-php",
+    "description": "PHP library for LinkedIn",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "league/oauth2-linkedin": "^4.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "symfony/serializer": "^3.4",
+        "symfony/property-access": "^3.4",
+        "symfony/property-info": "^3.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rishats\\LinkedIn\\": "lib/LinkedIn/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rishats\\LinkedIn\\Test\\": "test/LinkedIn/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rishat Sultanov",
+            "email": "rihasultanov@gmail.com"
+        }
+    ]
+}
