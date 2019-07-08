@@ -9,7 +9,7 @@ PHP client for LinkedIn API V2.
 ## Installation
 
 ```SHELL
-composer require reverse/linkedin-php:"dev-master"
+composer require rishats/linkedin-php:"dev-master"
 ```
 
 ## Using LinkedIn API
