@@ -132,4 +132,16 @@ class Client
             'X-Restli-Protocol-Version: 2.0.0',
         ];
     }
+
+    public function doRequestWithSavedToken($path, $body, $method, $token): string
+    {
+        $this->header = [
+            'Authorization: Bearer '.$token,
+            'Content-Type: application/json',
+            'cache-control: no-cache',
+            'X-Restli-Protocol-Version: 2.0.0',
+        ];
+
+        return $this->transport->executeRequest(self::BASE_URI.$path, $body, $method, $this->header);
+    }
 }
