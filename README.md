@@ -1,4 +1,4 @@
-# reverse/linkedin-php
+# rishats/linkedin-php
 
 
 PHP client for LinkedIn API V2.
